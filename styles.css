@@ -1,4 +1,4 @@
-/* general */
+/* GENERAL */
 
 .title{
     font-size: 1.5em;
@@ -11,9 +11,16 @@
     font-size: 1em;
     border-radius: 50px;
     padding: 10px 20px;
-    color: #ffffff;
     background-color: #AD3428;
+    color: #ffffff;
     border: none;
+    max-width: fit-content;
+    align-self: center;
+}
+
+.button:hover{
+    background-color: #ffffff;
+    color: #999E72;
 }
 
 .heading{
@@ -48,14 +55,34 @@
     font-weight: 50%;
 }
 
-/* sections */
-
-.header{
-    background-color: #999E72;
+.heading6{
+    font-size: 0.6em;
+    font-family: Maven Pro;
+    text-align: center;
+    font-weight: 25%;
 }
 
-.shopNow{
+/* SECTIONS */
+
+/* header */
+.menu{
     background-color: #999E72;
+    display: flex;
+    justify-content: center;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    background-color: #DEE0C9;
+    color: #6B4E20;
+    border: none;
+    width: 100%;
+}
+
+/* main */
+.shopNow{
+    background-color: grey; /* placeholder for image*/
     display: flex;
     justify-content: center;
 }
@@ -68,7 +95,9 @@
 }
 
 .quote{
-    background-color: #999E72;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
 }
 
 .newReleases{
@@ -79,12 +108,15 @@
 }
 
 .signUp{
-    background-color: #999E72;
+    background-color: grey;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+/* footer */
 .footer{
     background-color: #999E72;
+    display: flex;
+    justify-content: center;
 }

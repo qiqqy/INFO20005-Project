@@ -1,0 +1,25 @@
+:root {
+      /* Color palette */
+    --green: #999e72;
+    --red: #AD3428;
+
+    --green-light: #BCC293;
+    --green-dark: #859033;
+    --green-darker: #6B4E20;
+
+    --white: #ffffff;
+    --light-grey: #DEE0C9; /* for search bar */
+
+    /* Links */
+    --color-link: #66a6b9;
+    --color-visited-link: #9c509c; 
+
+    /* Buttons */
+    --color-hover: #ffffff;
+    --color-active: #ffffff;
+    --color-hover-text: #999e72;
+
+
+}
+
+

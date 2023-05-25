@@ -1,0 +1,27 @@
+:root {
+    
+  /* Base size and scale ratio */
+  --base-size: 1rem;
+  --scale-ratio: 1.2;
+
+  /* Text sizes */
+  --text-xs: calc(var(--base-size) * (var(--scale-ratio) ** -3));
+  --text-sm: calc(var(--base-size) * (var(--scale-ratio) ** -2));
+  --text-md: calc(var(--base-size) * (var(--scale-ratio) ** -1));
+  --text-lg: calc(var(--base-size) * (var(--scale-ratio) ** 0));
+  --text-xl: calc(var(--base-size) * (var(--scale-ratio) ** 1));
+  --text-xxl: calc(var(--base-size) * (var(--scale-ratio) ** 2));
+  --text-xxxl: calc(var(--base-size) * (var(--scale-ratio) ** 3));
+
+  /* Spacing */
+  --spacing-xxxs: 0.25em;
+  --spacing-xxs: 0.375em;
+  --spacing-xs: 0.5em;
+  --spacing-sm: 0.75em;
+  --spacing-md: 1.25em;
+  --spacing-lg: 2em;
+  --spacing-xl: 3.25em;
+  --spacing-xxl: 5.25em;
+  --spacing-xxxl: 8.5em;
+
+}

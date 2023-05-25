@@ -4,6 +4,8 @@
     font-size: 1.5em;
     font-family: Nerko One;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .button{
@@ -23,39 +25,41 @@
     color: #999E72;
 }
 
-.heading{
+h1{
     font-size: 2em;
     font-family: Nerko One;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-.heading2{
+h2{
     font-size: 1.75em;
     font-family: Nerko One;
     text-align: center;
 }
 
-.heading3{
+h3{
     font-size: 1em;
     font-family: Maven Pro;
     text-align: center;
 }
 
-.heading4{
+h4{
     font-size: 1em;
     font-family: Maven Pro;
     text-align: center;
     font-weight: 50%;
 }
 
-.heading5{
+h5{
     font-size: 0.8em;
     font-family: Maven Pro;
     text-align: center;
     font-weight: 50%;
 }
 
-.heading6{
+h6{
     font-size: 0.6em;
     font-family: Maven Pro;
     text-align: center;
@@ -65,10 +69,25 @@
 /* SECTIONS */
 
 /* header */
-.menu{
+.nav{
     background-color: #999E72;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    align-items: center;
 }
 
 .searchbar{
@@ -81,6 +100,13 @@
 }
 
 /* main */
+body{
+    width: 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+    padding-top: 80px;
+}
+
 .shopNow{
     background-color: grey; /* placeholder for image*/
     display: flex;

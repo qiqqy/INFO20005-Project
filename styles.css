@@ -1,7 +1,7 @@
 /* GENERAL */
 
 .title{
-    font-size: 1.5em;
+    font-size: x-large;
     font-family: Nerko One;
     text-align: center;
     display: flex;
@@ -13,19 +13,20 @@
     font-size: 1em;
     border-radius: 50px;
     padding: 10px 20px;
-    background-color: #AD3428;
-    color: #ffffff;
+    background-color: var(--red);
+    color: var(--white);
     border: none;
     max-width: fit-content;
     align-self: center;
 }
 
 .button:hover{
-    background-color: #ffffff;
-    color: #999E72;
+    background-color: var(--white);
+    color: var(--green);
 }
 
 h1{
+    color: var(--white);
     font-size: 2em;
     font-family: Nerko One;
     text-align: center;
@@ -34,18 +35,21 @@ h1{
 }
 
 h2{
+    color: var(--white);
     font-size: 1.75em;
     font-family: Nerko One;
     text-align: center;
 }
 
 h3{
+    color: var(--white);
     font-size: 1em;
     font-family: Maven Pro;
     text-align: center;
 }
 
 h4{
+    color: var(--white);
     font-size: 1em;
     font-family: Maven Pro;
     text-align: center;
@@ -53,6 +57,7 @@ h4{
 }
 
 h5{
+    color: var(--white);
     font-size: 0.8em;
     font-family: Maven Pro;
     text-align: center;
@@ -60,6 +65,7 @@ h5{
 }
 
 h6{
+    color: var(--white);
     font-size: 0.6em;
     font-family: Maven Pro;
     text-align: center;
@@ -70,7 +76,7 @@ h6{
 
 /* header */
 .nav{
-    background-color: #999E72;
+    background-color: var(--green);
     position: fixed;
     width: 100%;
     top: 0%;
@@ -93,8 +99,8 @@ li{
 .searchbar{
     display: flex;
     justify-content: center;
-    background-color: #DEE0C9;
-    color: #6B4E20;
+    background-color: var(--light-grey);
+    color: var(--green-darker);
     border: none;
     width: 100%;
 }
@@ -107,14 +113,14 @@ body{
     padding-top: 80px;
 }
 
-.shopNow{
-    background-color: grey; /* placeholder for image*/
+.heroBanner{
+    background-color: grey; /*placeholder for image*/
     display: flex;
     justify-content: center;
 }
 
 .bestsellers{
-    background-color: #BCC293;
+    background-color: var(--green-light);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,7 +133,7 @@ body{
 }
 
 .newReleases{
-    background-color: #859033;
+    background-color: var(--green-dark);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,7 +148,7 @@ body{
 
 /* footer */
 .footer{
-    background-color: #999E72;
+    background-color: var(--green);
     display: flex;
     justify-content: center;
 }

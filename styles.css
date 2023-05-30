@@ -20,8 +20,11 @@
     background-color: var(--red);
     color: var(--white);
     border: none;
-    max-width: fit-content;
     align-self: center;
+}
+
+.button--heroBanner{
+    margin-bottom: 120px;
 }
 
 .button:hover{
@@ -112,10 +115,15 @@ body{
 }
 
 .heroBanner{
-    color: var(--white);
-    background-color: grey; /*placeholder for image*/
+    background-image: url("Images/heroBanner.jpg"); 
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center 50%; 
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;  
 }
 
 .bestsellers{

@@ -127,10 +127,13 @@ li{
 
 .searchbar{
     background-color: var(--light-grey);
+    position: fixed;
+    margin-top: 0%;
     background-image: url("Images/icons/Search.svg");
     background-repeat: no-repeat;
     border: none;
     width: 100%;
+    opacity: 0.5;
 }
 
 /* main */
@@ -138,7 +141,7 @@ body{
     width: 100%;
     margin-top: 0%;
     margin-left: 0%;
-    padding-top: 5rem;
+    padding-top: 4rem;
 }
 
 .heroBanner{

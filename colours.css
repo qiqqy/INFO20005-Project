@@ -1,6 +1,6 @@
 :root {
       /* Color palette */
-    --green: #999e72;
+    --green: #999E72;
     --red: #AD3428;
 
     --green-light: #BCC293;
@@ -12,13 +12,13 @@
     --light-grey: #DEE0C9; /* for search bar */
 
     /* Links */
-    --color-link: #66a6b9;
-    --color-visited-link: #9c509c; 
+    --color-link: #66A6B9;
+    --color-visited-link: #9C509C; 
 
     /* Buttons */
     --color-hover: #ffffff;
     --color-active: #ffffff;
-    --color-hover-text: #999e72;
+    --color-hover-text: #999E72;
 
 
 }

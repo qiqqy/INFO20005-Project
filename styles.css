@@ -50,6 +50,11 @@
     color: var(--green);
 }
 
+.icon{
+    width: 1.5em;
+    height: auto;
+}
+
 h1{
     font-size: var(--text-xxl);
     font-family: Nerko One;
@@ -122,6 +127,8 @@ li{
 
 .searchbar{
     background-color: var(--light-grey);
+    background-image: url("Images/icons/Search.svg");
+    background-repeat: no-repeat;
     border: none;
     width: 100%;
 }
@@ -131,7 +138,7 @@ body{
     width: 100%;
     margin-top: 0%;
     margin-left: 0%;
-    padding-top: 6rem;
+    padding-top: 5rem;
 }
 
 .heroBanner{
@@ -229,7 +236,7 @@ body{
 
 .shopping{
     background-color: var(--green-light);
-    padding: var(--spacing-md) var(--spacing-xl);
+    padding: var(--spacing-md) var(--spacing-xxl);
     display: flex;
     flex-direction: column;
 }
@@ -252,7 +259,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: space-between;
-    margin: 0 var(--spacing-xl) var(--spacing-xl) 0;
+    margin: var(--spacing-lg) var(--spacing-xxl) var(--spacing-lg) 0;
 }
 
 .shopping__product-card__image{

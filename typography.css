@@ -12,7 +12,7 @@
   --text-xl: calc(var(--base-size) * (var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio)));
   --text-xxl: calc(var(--base-size) * (var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio)));
   --text-xxxl: calc(var(--base-size) * (var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio) * var(--scale-ratio)));
-
+  
   /* Spacing */
   --spacing-xxxs: 0.25em;
   --spacing-xxs: 0.375em;

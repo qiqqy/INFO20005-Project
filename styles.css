@@ -42,7 +42,6 @@
 .button--small{
     font-size: var(--text-sm);
     margin: var(--spacing-sm);
-
 }
 
 .button:hover{
@@ -53,6 +52,12 @@
 .icon{
     width: 1.5em;
     height: auto;
+}
+
+.icon--sort{
+    width: 2em;
+    height: auto;
+    margin-top: var(--spacing-lg);
 }
 
 h1{
@@ -84,15 +89,16 @@ h4{
 h5{
     font-size: var(--text-sm);
     font-family: Maven Pro;
-    font-weight: normal;
     text-align: center;
+    margin-bottom: 0;
 }
 
 h6{
-    font-size: var(--text-xs);
+    font-size: var(--text-sm);
     font-family: Maven Pro;
     font-weight: normal;
     text-align: center;
+    margin: 0;
 }
 
 p{
@@ -100,6 +106,10 @@ p{
     font-family: Maven Pro; 
     font-weight: normal;
     text-align: center;
+}
+
+.h0{
+    font-size: var(--text-xxxl);
 }
 
 /* HOMEPAGE */
@@ -233,6 +243,7 @@ body{
     background-color: var(--green);
     display: flex;
     justify-content: center;
+    padding: var(--spacing-md);
 }
 
 /* SHOPPING PAGE */
@@ -248,6 +259,7 @@ body{
     display: flex;
     justify-content: space-between;
     color: var(--brown);
+    margin-top: var(--spacing-lg);
 }
 
 .shopping__books-block{
@@ -272,8 +284,16 @@ body{
 }
 
 .shopping__product-card__content{
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    line-height: var(--spacing-xxxs);
+}
+
+.shopping__product-card__buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .shopping__bottom{

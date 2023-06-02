@@ -227,7 +227,7 @@ body{
     opacity: 0.8;
     color: var(--white);
     justify-content: center;
-    height: 80vh;
+    height: 35rem;
     text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 

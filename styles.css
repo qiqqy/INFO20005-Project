@@ -320,14 +320,14 @@ body{
     display: flex;
     flex-direction: column;
     background-color: var(--green-light);
-    padding: var(--spacing-xl) var(--spacing-xxl);
+    padding: var(--spacing-xxl);
 }
 
 .shopping__top{
     display: flex;
     justify-content: space-between;
     color: var(--brown);
-    margin-bottom: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
 }
 
 .shopping__top .icon{

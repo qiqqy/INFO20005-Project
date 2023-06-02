@@ -115,8 +115,6 @@ h1{
     font-size: var(--text-xxxl);
     font-family: Nerko One;
     text-align: center;
-    display: flex;
-    justify-content: center;
 }
 
 h2{
@@ -138,29 +136,21 @@ h4{
 }
 
 h5{
-    font-size: var(--text-sm);
+    font-size: var(--text-md);
     font-family: Maven Pro;
     text-align: center;
-    margin-bottom: 0;
 }
 
 h6{
     font-size: var(--text-sm);
     font-family: Maven Pro;
-    font-weight: normal;
     text-align: center;
-    margin: 0;
 }
 
 p{
     font-size: var(--text-xs);
     font-family: Maven Pro; 
-    font-weight: normal;
     text-align: center;
-}
-
-.h0{
-    font-size: var(--text-xxxl);
 }
 
 /* HOMEPAGE */

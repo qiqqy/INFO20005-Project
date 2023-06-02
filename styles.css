@@ -54,10 +54,11 @@ table {
 
 /* UTILITY CLASSES */
 
-.center {
+.center{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 /* GENERAL */
@@ -67,7 +68,7 @@ table {
     font-family: Nerko One;
     color: var(--white);
     padding: 0;
-    margin: var(--spacing-xxs);
+    margin: var(--spacing-xxxs) var(--spacing-xxs) var(--spacing-xxs) var(--spacing-xxs);
 }
 
 .button{
@@ -87,7 +88,7 @@ table {
 }
 
 .button--hero-banner{
-    margin-bottom: 120px;
+    margin-bottom: 5rem;
 }
 
 .button--small{
@@ -109,6 +110,10 @@ table {
     width: 2em;
     height: auto;
     margin-top: var(--spacing-lg);
+}
+
+.icon--logo{
+    margin-top: var(--spacing-xs);
 }
 
 h1{
@@ -163,6 +168,10 @@ p{
     font-size: var(--text-xxxl);
 }
 
+a{
+    text-decoration: none;
+}
+
 /* HOMEPAGE */
 
 /* header */
@@ -190,19 +199,18 @@ li{
 .searchbar{
     background-color: var(--light-grey);
     position: fixed;
-    margin-top: 0%;
     background-image: url("Images/icons/Search.svg");
     background-repeat: no-repeat;
     border: none;
     width: 100%;
     opacity: 0.5;
+    height: 1.5rem;
 }
 
 /* main */
 body{
     width: 100%;
-    margin: 0;
-    padding-top: 4rem;
+    padding-top: 1.5rem;
     overscroll-behavior: none;
 }
 

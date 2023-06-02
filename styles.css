@@ -105,12 +105,6 @@ table {
     height: auto;
 }
 
-.icon--sort{
-    width: 2em;
-    height: auto;
-    margin-top: var(--spacing-lg);
-}
-
 h1{
     font-size: var(--text-xxxl);
     font-family: Nerko One;
@@ -315,17 +309,22 @@ body{
 /* SHOPPING PAGE */
 
 .shopping{
-    background-color: var(--green-light);
-    padding: var(--spacing-md) var(--spacing-xxl);
     display: flex;
     flex-direction: column;
+    background-color: var(--green-light);
+    padding: var(--spacing-xl) var(--spacing-xxl);
 }
 
 .shopping__top{
     display: flex;
     justify-content: space-between;
     color: var(--brown);
-    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.shopping__top .icon{
+    width: 2em;
+    height: auto;
 }
 
 .shopping__books-block{
@@ -340,24 +339,32 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: space-between;
-    margin: var(--spacing-lg) var(--spacing-xxl) var(--spacing-lg) 0;
+    margin: var(--spacing-md) var(--spacing-xxs) var(--spacing-lg) 0;
 }
 
 .shopping__product-card__image{
     width: 10em;
-    height: auto;
-    box-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.1);
+    height: 15em;
+    box-shadow: 0.4rem 0.4rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 
 .shopping__product-card__content{
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: var(--spacing-sm) 0 var(--spacing-xxxs) 0;
+}
+
+.shopping__product-card h6:first-child{
+    font-weight: bold;
+}
+
+.shopping__product-card h6:last-child{
+    font-weight: bold;
 }
 
 .shopping__product-card__buttons{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -365,6 +372,13 @@ body{
 .shopping__bottom{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: var(--spacing-xl);
+}
+
+.shopping__bottom .icon{
+    height: 2em;
+    width: auto;
 }
 
 /* PRODUCT PAGE */

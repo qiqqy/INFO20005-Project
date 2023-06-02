@@ -106,6 +106,10 @@ table {
     height: auto;
 }
 
+.icon--logo{
+    margin-top: 0.75rem;
+}
+
 h1{
     font-size: var(--text-xxxl);
     font-family: Nerko One;

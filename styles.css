@@ -108,7 +108,7 @@ table {
 
 .button-counter{
     border-color: var(--white);
-    background-color: rgba(var(--white), 0.5);
+    background-color: rgba(var(--white), 0.5); /* this does not work */
 }
 
 .icon{
@@ -254,6 +254,11 @@ body{
     flex-direction: row;
     margin: var(--spacing-md) var(--spacing-lg);
     justify-content: space-between;
+    color: var(--brown);
+}
+
+.books-block--white{
+    color: var(--white);
 }
 
 .scroll-arrow {
@@ -407,6 +412,7 @@ body{
     background-color: var(--green-light);
     padding: var(--spacing-xxl);
     text-align: left;
+    color: var(--brown);
 }
 
 .product__top{
@@ -439,8 +445,10 @@ body{
   }
   
   .quantity-input {
-    width: 60px;
-    padding: 4px;
+    width: 2rem;
     text-align: center;
+    font-family: Maven Pro;
+    background-color: var(--green-light);
+    color: var(--brown);
   }
   

@@ -111,6 +111,12 @@ table {
     background-color: rgba(var(--white), 0.5); /* this does not work */
 }
 
+.close-button{
+    position: fixed;
+    right: var(--spacing-sm);
+    padding: var(--spacing-sm);
+}
+
 .icon{
     width: 1.5em;
     height: auto;
@@ -175,7 +181,7 @@ a{
     width: 100%;
     top: 0%;
     left: 0%;
-    z-index: 9999;
+    z-index: 9998;
 }
 
 ul{
@@ -199,6 +205,38 @@ li{
     width: 100%;
     opacity: 0.5;
     height: 1.5rem;
+}
+
+.menu{
+    background-color: var(--green-olive);
+    height: 100vh;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow-x: hidden;
+    padding: var(--spacing-lg);
+    transition: 0.5s ease-in;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: var(--text-md);
+    display: block;
+    padding: var(--spacing-sm);
+}
+
+.cart{
+    background-color: var(--green-olive);
+    height: 100vh;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    position: fixed;
+    overflow-x: hidden;
+    padding: var(--spacing-md);
+    transition: 0.5s ease-in;
 }
 
 /* main */

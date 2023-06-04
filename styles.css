@@ -61,6 +61,10 @@ table {
     justify-content: center;
 }
 
+.left-align {
+    text-align: left;
+  }
+
 /* GENERAL */
 
 .title{
@@ -85,6 +89,7 @@ table {
     max-width: fit-content;
     align-self: center;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .button--hero-banner{
@@ -99,6 +104,11 @@ table {
 .button:hover{
     background-color: var(--white);
     color: var(--green);
+}
+
+.button-counter{
+    border-color: var(--white);
+    background-color: rgba(var(--white), 0.5); /* this does not work */
 }
 
 .icon{
@@ -255,6 +265,11 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     margin: var(--spacing-lg) var(--spacing-xl) var(--spacing-xxxs) var(--spacing-xl);
+    color: var(--brown);
+}
+
+.books-block--white{
+    color: var(--white);
 }
 
 .scroll-arrow {
@@ -408,16 +423,48 @@ font-weight: bold;
 /* PRODUCT PAGE */
 
 .product{
-    background-color: var(--green-light);
-    padding: var(--spacing-md) var(--spacing-xl);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    color: var(--brown);
+    background-color: var(--green-light);
+    padding: var(--spacing-xxl);
     text-align: left;
+    color: var(--brown);
 }
 
-.product__product-image{
-    width: 20rem;
+.product__top{
+    color: var(--brown);
+    margin: var(--spacing-lg) 0;
 }
 
+.product-block{
+    display: flex;
+    flex-direction: row;
+}
+.product__product-card__image{
+    width: 30rem;
+    box-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.product__product-card__content{
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--spacing-xl);
+}
+
+  .label {
+    font-weight: bold;
+  }
+
+  .product-count {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-input {
+    width: 2rem;
+    text-align: center;
+    font-family: Maven Pro;
+    background-color: var(--green-light);
+    color: var(--brown);
+  }
+  

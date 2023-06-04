@@ -34,45 +34,45 @@
     </div>
     <!--side cart-->
     <div id="cart" class="cart">
-        <a href="javascript:void(0)" class="close-button" onclick="closeCart()">&times;</a>
-        <div class="shopping__product-card">
-            <img src="Images/book-covers/giovannis-room.webp" alt="Giovanni's Room by James Baldwin" class="shopping__product-card__image">
-            <div class="shopping__product-card__content">
-                <h6>Giovanni's Room</h6>
-                <h6>James Baldwin</h6>
-                <br>
-                <h6>$25.00</h6>
-            </div>
-            <div class="shopping__product-card__buttons">
-                <button class="button button--small">Add to Cart</button>
-                <img src="Images/icons/heart.png" class="icon">
-            </div>
+        <div class="cart-top">
+            <h1>YOUR CART</h1>
+            <a href="javascript:void(0)" class="close-button" onclick="closeCart()">&times;</a>
         </div>
-        <div class="shopping__product-card">
-            <img src="Images/book-covers/play-it-as-it-lays.webp" alt="Play It As It Lays by Joan Didion" class="shopping__product-card__image">
-            <div class="shopping__product-card__content">
-                <h6>Play It As It Lays</h6>
-                <h6>Joan Didion</h6>
-                <br>
-                <h6>$25.00</h6>
+        <div class="shopping__books-block">
+            <div class="shopping__product-card">
+                <img src="Images/book-covers/giovannis-room.webp" alt="Giovanni's Room by James Baldwin" class="shopping__product-card__image">
+                <div class="shopping__product-card__content">
+                    <h6>Giovanni's Room</h6>
+                    <h6>James Baldwin</h6>
+                    <br>
+                    <h6>$25.00</h6>
+                </div>
+                <button class="close-button">&times;</button>
             </div>
-            <div class="shopping__product-card__buttons">
-                <button class="button button--small">Add to Cart</button>
-                <img src="Images/icons/heart.png" class="icon">
+            <div class="shopping__product-card">
+                <img src="Images/book-covers/play-it-as-it-lays.webp" alt="Play It As It Lays by Joan Didion" class="shopping__product-card__image">
+                <div class="shopping__product-card__content">
+                    <h6>Play It As It Lays</h6>
+                    <h6>Joan Didion</h6>
+                    <br>
+                    <h6>$25.00</h6>
+                </div>
+                <button class="close-button">&times;</button>
             </div>
         </div>
     </div>
+    <!--main content-->
     <header>
         <div class="nav">
             <ul>
-                <li onclick="open-menu()"><img src="Images/icons/menu.png" alt="Menu" class="icon"></li>
+                <li onclick="openMenu()"><img src="Images/icons/menu.png" alt="Menu" class="icon"></li>
                 <li>
                     <a href="index.html" class="center">
                         <img src="Images/icons/hat-white.png" alt="" class="icon icon--logo">
                         <h1 class="title">MAD HATTERS BOOKSHOP</h1>
                     </a>
                 </li>
-                <li onclick="open-cart()"><img src="Images/icons/cart.png" alt="Cart" class="icon"></li>
+                <li onclick="openCart()"><img src="Images/icons/cart.png" alt="Cart" class="icon"></li>
             </ul>
             <input class="searchbar" type="text" placeholder=""></input>
         </div>

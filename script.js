@@ -22,18 +22,22 @@ window.onload = function() {
     });
   };
 
-function openmenu() {
+function openMenu() {
     document.getElementById("menu").style.width = "250px";
+    document.getElementById("menu").style.display = "block";
 }
 
 function closeMenu() {
     document.getElementById("menu").style.width = "0";
+    document.getElementById("menu").style.display = "none";
 }
 
-function opencart() {
+function openCart() {
     document.getElementById("cart").style.width = "500px";
+    document.getElementById("cart").style.display = "block";
 }
 
 function closeCart() {
     document.getElementById("cart").style.width = "0";
+    document.getElementById("cart").style.display = "none";
 }

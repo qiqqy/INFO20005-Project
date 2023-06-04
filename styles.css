@@ -118,6 +118,19 @@ table {
     color: var(--green);
 }
 
+.button-counter{
+    border-color: var(--white);
+    background-color: rgba(var(--white), 0.5); /* this does not work */
+}
+
+.close-button{
+    position: fixed;
+    right: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    font-size: var(--text-lg);
+    color: var(--white);
+}
+
 .icon{
     width: 1.5em;
     height: auto;
@@ -198,7 +211,7 @@ a:visited {
     width: 100%;
     top: 0%;
     left: 0%;
-    z-index: 9999;
+    z-index: 9998;
 }
 
 ul{
@@ -222,6 +235,92 @@ li{
     width: 100%;
     opacity: 0.5;
     height: 1.5rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--green-olive);
+    height: 100vh;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow-x: hidden;
+    padding: var(--spacing-lg);
+    transition: 0.5s ease-in;
+    display: none;
+}
+
+.menu .close-button{
+    align-self: flex-end;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: var(--text-md);
+    display: block;
+    padding: var(--spacing-sm);
+}
+
+.cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--green-olive);
+    height: 100vh;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    position: fixed;
+    overflow-x: hidden;
+    padding: var(--spacing-lg) var(--spacing-xl);
+    transition: 0.5s ease-in;
+    display: none;
+}
+
+.cart h1{
+    font-size: var(--spacing-lg);
+    color: var(--white);
+    padding: var(--spacing-xxxs) 0;
+}
+
+.cart-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart .shopping__books-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.cart .shopping__product-card{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.cart .shopping__product-card__image{
+    width: 6em;
+    height: 9em;
+}
+
+.cart .shopping__product-card__content{
+    padding-left: var(--spacing-md);
+}
+
+.cart .shopping__product-card__content h6{
+    text-align: left;
+    color: var(--white);
+}
+
+.cart .close-button{
+    color: none;
 }
 
 /* main */

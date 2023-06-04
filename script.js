@@ -14,9 +14,30 @@ window.onload = function() {
         heartIconLiked.style.display = 'block';
       });
   
+
       heartIconLiked.addEventListener('click', function() {
         heartIcon.style.display = 'block';
         heartIconLiked.style.display = 'none';
       });
     });
   };
+
+function openMenu() {
+    document.getElementById("menu").style.width = "250px";
+    document.getElementById("menu").style.display = "block";
+}
+
+function closeMenu() {
+    document.getElementById("menu").style.width = "0";
+    document.getElementById("menu").style.display = "none";
+}
+
+function openCart() {
+    document.getElementById("cart").style.width = "500px";
+    document.getElementById("cart").style.display = "block";
+}
+
+function closeCart() {
+    document.getElementById("cart").style.width = "0";
+    document.getElementById("cart").style.display = "none";
+}

@@ -65,6 +65,18 @@ table {
     text-align: left;
   }
 
+.nerko-one {
+    font-family: Nerko One;
+}
+
+.wider-letter-spacing {
+    letter-spacing: 0.125rem;
+  }
+
+.margin-top {
+    margin-top: var(--spacing-lg);
+}
+
 /* GENERAL */
 
 .title{
@@ -120,7 +132,18 @@ table {
 .icon{
     width: 1.5em;
     height: auto;
+    cursor: pointer;
 }
+
+.icon:not(.icon--logo):hover {
+    transform: scale(1.2);
+  }
+
+.icon--heart{
+    width: 1.5em;
+    height: auto;
+    transform: scale(1.1);
+  }
 
 .icon--logo{
     margin-top: 0.75rem;
@@ -170,7 +193,12 @@ p{
 
 a{
     text-decoration: none;
+    color: var(--color-link);
 }
+
+a:visited {
+    color: var(--color-visited-link);
+  }
 
 /* HOMEPAGE */
 
@@ -469,15 +497,12 @@ font-weight: bold;
     color: var(--brown);
 }
 
-.product__top{
-    color: var(--brown);
-    margin: var(--spacing-lg) 0;
-}
-
 .product-block{
     display: flex;
     flex-direction: row;
+    margin: var(--spacing-lg);
 }
+
 .product__product-card__image{
     width: 30rem;
     box-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.1);
@@ -487,6 +512,33 @@ font-weight: bold;
     display: flex;
     flex-direction: column;
     margin-left: var(--spacing-xl);
+    align-items: space-between;
+}
+
+.product__product-card__content > * + *{
+    margin-top: var(--spacing-xxs);
+}
+
+.product__product-card__content :nth-child(3) {
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+  }
+
+.product__product-card__content > :nth-last-child(-n+3) { /* quantity and add to cart buttons */ 
+    margin-left: auto;
+}
+
+.book-description h6 {
+    font-size: 1rem;
+    line-height: 130%;
+}
+
+.book-description > * + *{
+    margin-top: var(--spacing-sm);
+}
+
+.book-info > * + *{
+    margin-top: var(--spacing-xxs);
 }
 
   .label {
@@ -496,13 +548,21 @@ font-weight: bold;
   .product-count {
     display: flex;
     align-items: center;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
   }
+
   
   .quantity-input {
-    width: 2rem;
+    width: auto;
     text-align: center;
     font-family: Maven Pro;
     background-color: var(--green-light);
-    color: var(--brown);
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 0.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: var(--spacing-xl) var(--spacing-md);
   }
   

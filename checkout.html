@@ -25,78 +25,106 @@
             </a>
         </div>
     </header>
-    <main>
-    <div class="checkout">
-        <form class="payment-form">
-            <h2 class="form-heading">CONTACT</h2>
-            <div class="form-group">
-                <input type="text" placeholder="Email">
-                <input type="checkbox">
-                <span>Email me with news and offers</span>
-              </div>
-            <h2 class="form-heading">DELIVERY METHOD</h2>
-            <div class="radio-options">
-            <span class="radio-button">
-                <input type="radio" name="radio-group">
-                PICK-UP
-            </span>
-              
-              <span class="radio-button">
-                <input type="radio" name="radio-group">
-                DELIVERY
-              </span>
+    <main class="checkout">
+      <form class="payment-form">
+        <h2 class="form-heading">CONTACT</h2>
+          <div class="form-group">
+            <input type="text" placeholder="Email">
+            <input type="checkbox">
+            <span>Email me with news and offers</span>
+          </div>
+        <h2 class="form-heading">DELIVERY METHOD</h2>
+          <div class="radio-options">
+            <div class="radio-button">
+              <input type="radio" name="radio-group">
+              PICK UP
             </div>
-            <h2 class="form-heading">SHIPPING ADDRESS</h2>
-            <div class="form-group">
-                <input type="text" placeholder="First name">
-              </div>
-              <div class="form-group">
-                <input type="text" placeholder="Last name">
-              </div>
-            <div class="form-group">
-                <input type="text" placeholder="Address">
-              </div>
-              <div class="form-group">
-                <input type="text" placeholder="Postcode">
-                <input type="text" placeholder="State">
-              </div>
-            <div class="form-group">
-                <input type="text" placeholder="Mobile number">
-              </div>
-            <h2 class="form-heading">PAYMENT DETAILS</h2>
-            <div class="radio-options">
-                <span class="radio-button">
-                    <input type="radio" name="radio-group">
-                    CREDIT CARD
-                </span>
-                  
-                  <span class="radio-button">
-                    <input type="radio" name="radio-group">
-                    AFTERPAY
-                  </span>
-                </div>
-            <div class="form-group">
-                <input type="text" placeholder="Card number">
+            <div class="radio-button">
+              <input type="radio" name="radio-group">
+              DELIVERY
             </div>
-            <div class="form-group">
-                <input type="text" placeholder="MM/YY">
+          </div>
+        <h2 class="form-heading">SHIPPING ADDRESS</h2>
+          <div class="form-group">
+            <input type="text" placeholder="First name">
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Last name">
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Address">
+          </div>
+          <div class="form-group-half">
+            <input type="text" placeholder="Postcode">
+            <input type="text" placeholder="State">
+          </div>
+          <div class="form-group">
+              <input type="text" placeholder="Mobile number">
+          </div>
+        <h2 class="form-heading">PAYMENT DETAILS</h2>
+          <div class="radio-options">
+            <div class="radio-button">
+              <input type="radio" name="radio-group">
+              CREDIT CARD
+            </div>  
+            <div class="radio-button">
+              <input type="radio" name="radio-group">
+              AFTERPAY
             </div>
-            <div class="form-group">
-                <input type="text" placeholder="CVV">
-            </div>
-        </form>
+          </div>
+          <div class="form-group">
+              <input type="text" placeholder="Card number">
+          </div>
+          <div class="form-group-half">
+              <input type="text" placeholder="MM/YY">
+              <input type="text" placeholder="CVV">
+          </div>
+      </form>
+      <div class="review">
         <h2 class="form-heading">REVIEW AND PURCHASE</h2>
+        <h3 class="form-heading">Order Summary</h3>
+        <div class="shopping__books-block">
+          <div class="shopping__product-card">
+            <img src="Images/book-covers/giovannis-room.webp" alt="Giovanni's Room by James Baldwin" class="shopping__product-card__image">
+            <div class="shopping__product-card__content">
+              <div class="details">
+                <h6>Giovanni's Room</h6>
+                <h6>James Baldwin</h6>
+              </div>
+              <h6 class="price">$25.00</h6>
+            </div>
+          </div>
+          <div class="shopping__product-card">
+            <img src="Images/book-covers/play-it-as-it-lays.webp" alt="Play It As It Lays by Joan Didion" class="shopping__product-card__image">
+            <div class="shopping__product-card__content">
+              <div class="details">
+                <h6>Play It As It Lays</h6>
+                <h6>Joan Didion</h6>
+              </div>
+              <h6 class="price">$25.00</h6>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Gift or Discount Code">
+        </div>
+        <div class="calculations">
+          <div class="headings">
+            <h6>Subtotal</h6>
+            <h6>GST</h6> 
+            <h6>Shipping</h6>
+          </div>
+          <h6 class="price">$50.00</h6>
+        </div>
       </div>
     </main>
-    <!-- JS file link -->
-    <script src="script.js"></script>
     <footer>
         <div class="footer footer--checkout">
             <div class="total-price">
-                <h4>TOTAL</h4>
+                <h4>TOTAL:</h4>
                 <h4>50.00 AUD</h4>
             </div>
-            <button class="button" onclick="redirectToHome()">Pay Now</button>
+            <button class="button" onclick="redirectToHome()">MAKE PAYMENT</button>
         </div>
     </footer>
     <!-- JS file link -->

@@ -679,108 +679,170 @@ font-weight: bold;
   }
   
 
-  /* CHECKOUT */
-  .checkout {
+/* CHECKOUT PAGE */
+
+.checkout{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--green-light);
-    padding: var(--spacing-xxl) var(--spacing-xxl) var(--spacing-xl) var(--spacing-xxl);
-  }
+    padding: var(--spacing-xl) var(--spacing-xxl) var(--spacing-xxl) var(--spacing-xxl);
+}
+  
+.payment-form{
+    display: flex;
+    flex-direction: column;
+    width: 90vh;
+}
 
-  .user-info{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .payment-form {
-    margin-top: var(--spacing-sm);
-    display: flex;
-    flex-direction: column;
-    width: 80vh;
-  }
-  
-  .form-group {
+.form-group{
     margin-bottom: var(--spacing-sm);
-    width: 100%;
-  }
-  
-  .form-heading {
+    width: 97%;
+}
+
+span{
+    color: var(--brown);
+    font-size: var(--text-xs);
+    font-family: Maven Pro;
+}
+
+.form-group-half{
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-group-half input[type="text"]{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45%;
+}
+   
+.form-heading{
     color: var(--brown);
     text-align: left;
-    margin-top: var(--spacing-sm);
+    margin-top: var(--spacing-md);
     margin-bottom: var(--spacing-xxs);
-  }
-  
-  input[type="text"] {
+}
+
+input[type="text"]{
     width: 100%;
     padding: 0.6rem;
     border: none;
     background-color: var(--brown-light);
     border-radius: 0.5rem;
-  }
+}
 
 
   input[type="text"]::placeholder{
     color: var(--brown);
     font-family: Maven Pro;
     opacity: 1;
-  }
+}
 
-  input[type="radio"] {
+input[type="radio"]{
     width: 100%;
     padding: 0.6rem;
     border: none;
     background-color: var(--brown-light);
-  }
+}
 
-  .radio-options{
+.radio-options{
     display: flex;
     flex-direction: row;
-  }
+    justify-content: space-between;
+}
   
-  .radio-button {
-    color:var(--brown);
+.radio-button {
+    color: var(--brown);
     display: inline-block;
-    padding: 0.5rem 1rem;
-    border: 2px solid var(--brown-light);
+    padding: var(--spacing-xs) var(--spacing-xxl);
+    border: 3px solid var(--brown-light);
     background-color: var(--brown-light);
     cursor: pointer;
-  }
+    margin-bottom: var(--spacing-sm);
+}
 
-  .radio-button input[type="radio"] {
+.radio-button input[type="radio"] {
     display: none;
-  }
+}
 
-  .radio-button:hover {
+.radio-button:hover {
     background-color: var(--grey); 
-  }
+}
 
-
-  .total-price{
+.review{
     display: flex;
-    justify-content: space-between;
-  }
+    flex-direction: column;
+    width: 50vh;
+}
 
-  .footer--checkout{
+.review h3{
+    color: var(--brown);
+    font-weight: bold;
+    font-size: var(--text-lg);
+    margin-top: var(--spacing-xxxs);
+    opacity: 0.7;
+}
+
+.review .shopping__books-block{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: var(--spacing-sm);
+}
+
+.review .shopping__product-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: var(--spacing-xs) 0;
+}
+
+.review .shopping__product-card__image{
+    width: 4rem;
+    height: 6rem;
+}
+
+.review .shopping__product-card__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+    padding-left: var(--spacing-md);
+}
+
+.review .shopping__product-card__content h6{
+    text-align: left;
+}
+
+.review .shopping__product-card__content .details h6:last-child{
+    font-weight: normal;
+}
+
+.calculations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--brown);
+}
+
+.headings h6{
+    text-align: left;
+}
+
+.footer--checkout{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: var(--spacing-lg) var(--spacing-xxl);
+    font-weight: bold;
+}
+
+.total-price{
+    display: flex;
     justify-content: space-between;
   }
   
-
-  /* CONFIRMATION */
-
-  .confirmation{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--green-dark);
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    position: fixed;
-    padding: var(--spacing-lg);
-    padding-top: var(--spacing-lg);
-    transition: 0.5s ease-in;
-    color: var(--white);
-    margin-top: var(--spacing-header);
-    display: none;
-}

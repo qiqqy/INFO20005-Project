@@ -684,19 +684,71 @@ font-weight: bold;
     margin-top: var(--spacing-sm);
     display: flex;
     flex-direction: column;
+    width: 80vh;
   }
   
   .form-group {
     margin-bottom: var(--spacing-sm);
+    width: 100%;
   }
   
-  label {
-    display: block;
-    font-weight: bold;
+  .form-heading {
+    color: var(--brown);
+    text-align: left;
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-xxs);
   }
   
   input[type="text"] {
     width: 100%;
-    padding: 10px;
+    padding: 0.6rem;
     border: none;
+    background-color: var(--brown-light);
+    border-radius: 0.5rem;
   }
+
+  input[type="text"]::placeholder{
+    color: var(--brown);
+    font-family: Maven Pro;
+    opacity: 1;
+  }
+
+  input[type="radio"] {
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    background-color: var(--brown-light);
+  }
+
+  .radio-options{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .radio-button {
+    color:var(--brown);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--brown-light);
+    background-color: var(--brown-light);
+    cursor: pointer;
+  }
+
+  .radio-button input[type="radio"] {
+    display: none;
+  }
+
+  .radio-button:hover {
+    background-color: var(--grey); 
+  }
+
+
+  .total-price{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer--checkout{
+    justify-content: space-between;
+  }
+  

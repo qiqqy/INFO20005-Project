@@ -28,20 +28,25 @@
     <main>
     <div class="checkout">
         <form class="payment-form">
-            <h2 class="left-align">CONTACT</h2>
+            <h2 class="form-heading">CONTACT</h2>
             <div class="form-group">
                 <input type="text" placeholder="Email">
                 <input type="checkbox">
                 <span>Email me with news and offers</span>
               </div>
-            <h2 class="left-align">DELIVERY METHOD</h2>
-            <div class="form-group">
-                <input type="radio"><span>PICK-UP</span>
+            <h2 class="form-heading">DELIVERY METHOD</h2>
+            <div class="radio-options">
+            <span class="radio-button">
+                <input type="radio" name="radio-group">
+                PICK-UP
+            </span>
+              
+              <span class="radio-button">
+                <input type="radio" name="radio-group">
+                DELIVERY
+              </span>
             </div>
-            <div class="form-group">
-                <input type="radio"><span>DELIVERY</span>
-            </div>
-            <h2 class="left-align">SHIPPING ADDRESS</h2>
+            <h2 class="form-heading">SHIPPING ADDRESS</h2>
             <div class="form-group">
                 <input type="text" placeholder="First name">
               </div>
@@ -58,7 +63,18 @@
             <div class="form-group">
                 <input type="text" placeholder="Mobile number">
               </div>
-            <h2 class="left-align">PAYMENT DETAILS</h2>
+            <h2 class="form-heading">PAYMENT DETAILS</h2>
+            <div class="radio-options">
+                <span class="radio-button">
+                    <input type="radio" name="radio-group">
+                    CREDIT CARD
+                </span>
+                  
+                  <span class="radio-button">
+                    <input type="radio" name="radio-group">
+                    AFTERPAY
+                  </span>
+                </div>
             <div class="form-group">
                 <input type="text" placeholder="Card number">
             </div>
@@ -68,11 +84,21 @@
             <div class="form-group">
                 <input type="text" placeholder="CVV">
             </div>
-            <button class="button">Pay Now</button>
         </form>
-        <h2 class="left-align">REVIEW AND PURCHASE</h2>
+        <h2 class="form-heading">REVIEW AND PURCHASE</h2>
       </div>
     </main>
+    <!-- JS file link -->
+    <script src="script.js"></script>
+    <footer>
+        <div class="footer footer--checkout">
+            <div class="total-price">
+                <h4>TOTAL</h4>
+                <h4>50.00 AUD</h4>
+            </div>
+            <button class="button">Pay Now</button>
+        </div>
+    </footer>
     <!-- JS file link -->
     <script src="script.js"></script>
 </body>

@@ -68,13 +68,13 @@ table {
     text-align: left;
   }
 
+.right-align {
+    text-align: right;
+  }
+
 .nerko-one {
     font-family: Nerko One;
 }
-
-.wider-letter-spacing {
-    letter-spacing: 0.125rem;
-  }
 
 .margin-top {
     margin-top: var(--spacing-lg);
@@ -620,8 +620,8 @@ font-weight: bold;
 }
 
 .product__product-card__image {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     object-fit: contain;
     box-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.1);
   }
@@ -630,6 +630,7 @@ font-weight: bold;
 .product__product-card__content{
     display: flex;
     flex-direction: column;
+    text-align: left;
     margin-left: var(--spacing-xl);
     align-items: space-between;
 }
@@ -638,12 +639,15 @@ font-weight: bold;
     margin-top: var(--spacing-xxs);
 }
 
-.product__product-card__content :nth-child(3) {
-    margin-top: var(--spacing-sm);
-    margin-bottom: var(--spacing-md);
+.price {
+    margin-top: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+    font-family: Nerko One;
+    text-align: left;
+    letter-spacing: 0.125rem;
   }
 
-.product__product-card__content > :nth-last-child(-n+3) { /* quantity and add to cart buttons */ 
+.product__product-card__content > :nth-last-child(-n+4) { /* quantity and add to cart buttons */ 
     margin-left: auto;
 }
 
@@ -673,7 +677,7 @@ font-weight: bold;
 
   
   .quantity-input {
-    width: auto;
+    width: 4rem;
     text-align: center;
     font-family: Maven Pro;
     background-color: var(--green-light);
@@ -682,7 +686,7 @@ font-weight: bold;
     padding: 0.4rem;
     font-size: 1rem;
     cursor: pointer;
-    margin: var(--spacing-xl) var(--spacing-md);
+    margin: var(--spacing-md) var(--spacing-md);
   }
   
 

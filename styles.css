@@ -77,6 +77,10 @@ table {
     margin-top: var(--spacing-lg);
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /* GENERAL */
 
 .title{
@@ -227,15 +231,16 @@ li{
     align-items: center;
 }
 
-.searchbar{
+input.searchbar[type="text"] {
     background-color: var(--light-grey);
     position: fixed;
     background-image: url("Images/icons/Search.svg");
     background-repeat: no-repeat;
     border: none;
+    border-radius: 0;
     width: 100%;
     opacity: 0.5;
-    height: 1.5rem;
+    height: 0.7rem;
 }
 
 .menu{
@@ -279,17 +284,17 @@ li{
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--green-olive);
-    height: 100vh;
     z-index: 9999;
     top: 0;
     right: 0;
+    bottom: 0;
     position: fixed;
     overflow-x: hidden;
     padding: var(--spacing-lg) var(--spacing-xxl) 0 var(--spacing-xl); 
     transition: 0.5s ease-in;
     display: none;
 }
-
+  
 .cart h1{
     font-size: var(--spacing-lg);
     color: var(--white);
@@ -359,7 +364,7 @@ li{
 
 .cart .button{
     align-self:flex-end;
-    margin: var(--spacing-sm) 0;
+    margin: var(--spacing-sm) 0 var(--spacing-lg) 0;
     padding: var(--spacing-xs) var(--spacing-xl);
     text-align: center;
     align-self: flex-end;
@@ -590,22 +595,26 @@ font-weight: bold;
 .product{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: var(--green-light);
     padding: var(--spacing-xxl);
-    text-align: left;
     color: var(--brown);
 }
 
 .product-block{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin: var(--spacing-lg);
 }
 
-.product__product-card__image{
-    width: 30rem;
+.product__product-card__image {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
     box-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.1);
-}
+  }
+  
 
 .product__product-card__content{
     display: flex;
@@ -722,7 +731,8 @@ input[type="text"]{
     border-radius: 0.5rem;
 }
 
-input[type="text"]::placeholder{
+
+  input[type="text"]::placeholder{
     color: var(--brown);
     font-family: Maven Pro;
     opacity: 1;
@@ -830,10 +840,5 @@ input[type="radio"]{
 .total-price{
     display: flex;
     justify-content: space-between;
-}
-
-.footer .button{
-    align-self: flex-end;
-    margin: var(--spacing-md) 0 var(--spacing-lg);
-    padding: var(--spacing-xs) var(--spacing-xxl);
-}
+  }
+  

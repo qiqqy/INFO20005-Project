@@ -17,6 +17,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--order confirmation-->
+    <div id="confirmation" class="confirmation">
+        <a href="javascript:void(0)" class="close-button" onclick="closeConfirmation()">&times;</a>
+        <h6 class="bold">
+            ORDER PLACED!
+            </h6>
+            <br>
+            <h6>A confirmation email will be sent to your email shortly. 
+                Thank you for shopping at Mad Hatters Bookshop. <br> We hope to see you again soon.
+            </h6>
+    </div>
      <!--side menu-->
      <div id="menu" class="menu">
         <a href="javascript:void(0)" class="close-button" onclick="closeMenu()">&times;</a>
@@ -74,6 +85,7 @@
     <!--main content-->
     <header>
         <div class="nav">
+            <div class="header">
             <ul>
                 <li onclick="openMenu()"><img src="Images/icons/menu.png" alt="Menu" class="icon"></li>
                 <li>
@@ -84,6 +96,7 @@
                 </li>
                 <li onclick="openCart()"><img src="Images/icons/cart.png" alt="Cart" class="icon"></li>
             </ul>
+            </div>
             <input class="searchbar" type="text" placeholder=""></input>
         </div>
     </header>

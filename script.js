@@ -61,10 +61,17 @@ function openConfirmation() {
 
 function closeConfirmation() {
     document.getElementById("confirmation").style.width = "0";
-    document.getElementById("confirmation").style.height = "0";
     document.getElementById("confirmation").style.display = "none";
 }
 
 function redirectToHome() {
     window.location.href = "index.html#confirmation";
+}
+
+function redirectToShopping() {
+    window.location.href = "shopping.html";
+}
+
+function redirectToProduct() {
+    window.location.href = "product.html";
 }

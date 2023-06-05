@@ -1,4 +1,7 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* 
+CSS Reset
+
+    http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -122,11 +125,6 @@ table {
     color: var(--green);
 }
 
-.button-counter{
-    border-color: var(--white);
-    background-color: rgba(var(--white), 0.5); /* this does not work */
-}
-
 .close-button{
     position: absolute;
     right: var(--spacing-sm);
@@ -143,7 +141,7 @@ table {
 }
 
 .icon:not(.icon--logo):hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
 .icon--heart{
@@ -475,9 +473,9 @@ body{
     height: 24rem;
 }
 
-.product-card__image:hover {
+.product-card__image:hover{
     transform: scale(1.1);
-  }
+}
 
 .product-card__content{
     text-align: center; 
@@ -555,6 +553,11 @@ font-weight: bold;
     width: 10em;
     height: 15em;
     box-shadow: 0.4rem 0.4rem 0.25rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.shopping__product-card__image:hover{
+    transform: scale(1.02);
 }
 
 .shopping__product-card__content{
@@ -562,6 +565,7 @@ font-weight: bold;
     flex-direction: column;
     text-align: center;
     margin: var(--spacing-sm) 0 var(--spacing-xxxs) 0;
+    cursor: pointer;
 }
 
 .shopping__product-card h6:first-child{

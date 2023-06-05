@@ -124,11 +124,12 @@ table {
 }
 
 .close-button{
-    position: fixed;
+    position: absolute;
     right: var(--spacing-sm);
     padding: var(--spacing-sm);
-    font-size: var(--text-lg);
+    font-size: var(--text-md);
     color: var(--white);
+    cursor: pointer;
 }
 
 .icon{
@@ -252,8 +253,12 @@ li{
     display: none;
 }
 
-.menu .close-button{
-    align-self: flex-end;
+.menu h3{
+    padding-top: var(--spacing-sm);
+}
+
+.menu a:hover{
+    transform: scale(1.1);
 }
 
 .menu a{
@@ -264,11 +269,15 @@ li{
     padding: var(--spacing-sm);
 }
 
+.menu .close-button{
+    font-size: var(--text-xl);
+    padding: var(--spacing-xxxs);
+}
+
 .cart{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
     background-color: var(--green-olive);
     height: 100vh;
     z-index: 9999;
@@ -276,7 +285,7 @@ li{
     right: 0;
     position: fixed;
     overflow-x: hidden;
-    padding: var(--spacing-lg) var(--spacing-xl);
+    padding: var(--spacing-lg) var(--spacing-xxl) 0 var(--spacing-xl); 
     transition: 0.5s ease-in;
     display: none;
 }
@@ -287,9 +296,20 @@ li{
     padding: var(--spacing-xxxs) 0;
 }
 
-.cart-top{
+.cart h4{
+    color: var(--white);
+    font-size: var(--text-md);
+    font-weight: bold;
+}
+
+.cart-heading{
     display: flex;
     justify-content: space-between;
+}
+
+.cart-top .close-button{
+    font-size: var(--text-xl);
+    padding: var(--spacing-xxxs);
 }
 
 .cart .shopping__books-block{
@@ -301,8 +321,6 @@ li{
 
 .cart .shopping__product-card{
     flex-direction: row;
-    justify-content: space-between;
-    align-items: space-between;
 }
 
 .cart .shopping__product-card__image{
@@ -319,9 +337,34 @@ li{
     color: var(--white);
 }
 
-.cart .close-button{
-    color: none;
+.cart .quantity-input{
+    background-color: var(--green-olive);
+    border: 0.8px solid var(--white);
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-left: 0;
 }
+
+.cart-bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--spacing-xl);
+}
+
+.cart-total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart .button{
+    align-self:flex-end;
+    margin: var(--spacing-sm) 0;
+    padding: var(--spacing-xs) var(--spacing-xl);
+    text-align: center;
+    align-self: flex-end;
+}
+
 
 /* main */
 body{

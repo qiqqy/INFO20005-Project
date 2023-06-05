@@ -23,7 +23,7 @@ window.onload = function() {
   };
 
 function openMenu() {
-    document.getElementById("menu").style.width = "250px";
+    document.getElementById("menu").style.width = "200px";
     document.getElementById("menu").style.display = "block";
 }
 
@@ -33,7 +33,7 @@ function closeMenu() {
 }
 
 function openCart() {
-    document.getElementById("cart").style.width = "500px";
+    document.getElementById("cart").style.width = "400px";
     document.getElementById("cart").style.display = "block";
 }
 

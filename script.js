@@ -20,6 +20,11 @@ window.onload = function() {
         heartIconLiked.style.display = 'none';
       });
     });
+
+    if (window.location.hash === "#confirmation") {
+        openConfirmation();
+      }
+
   };
 
 function openMenu() {
@@ -46,3 +51,18 @@ function scrollToSection() {
   var targetSection = document.getElementById("bestsellers");
   targetSection.scrollIntoView({ behavior: 'smooth' });
 }
+
+function openConfirmation() {
+    document.getElementById("confirmation").style.width = "100vw";
+    document.getElementById("confirmation").style.display = "block";
+}
+
+function closeConfirmation() {
+    document.getElementById("confirmation").style.width = "0";
+    document.getElementById("confirmation").style.height = "0";
+    document.getElementById("confirmation").style.display = "none";
+}
+
+function redirectToHome() {
+    window.location.href = "index.html#confirmation";
+  }

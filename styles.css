@@ -307,7 +307,7 @@ li{
     justify-content: space-between;
 }
 
-.cart-top .close-button{
+.cart-heading .close-button{
     font-size: var(--text-xl);
     padding: var(--spacing-xxxs);
 }

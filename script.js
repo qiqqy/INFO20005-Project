@@ -41,3 +41,8 @@ function closeCart() {
     document.getElementById("cart").style.width = "0";
     document.getElementById("cart").style.display = "none";
 }
+
+function scrollToSection() {
+  var targetSection = document.getElementById("bestsellers");
+  targetSection.scrollIntoView({ behavior: 'smooth' });
+}

@@ -700,7 +700,7 @@ font-weight: bold;
     width: 97%;
 }
 
-span{
+.form-group span{
     color: var(--brown);
     font-size: var(--text-xs);
     font-family: Maven Pro;

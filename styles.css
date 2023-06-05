@@ -284,17 +284,17 @@ input.searchbar[type="text"] {
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--green-olive);
-    height: 100vh;
     z-index: 9999;
     top: 0;
     right: 0;
+    bottom: 0;
     position: fixed;
     overflow-x: hidden;
     padding: var(--spacing-lg) var(--spacing-xxl) 0 var(--spacing-xl); 
     transition: 0.5s ease-in;
     display: none;
 }
-
+  
 .cart h1{
     font-size: var(--spacing-lg);
     color: var(--white);
@@ -364,7 +364,7 @@ input.searchbar[type="text"] {
 
 .cart .button{
     align-self:flex-end;
-    margin: var(--spacing-sm) 0;
+    margin: var(--spacing-sm) 0 var(--spacing-lg) 0;
     padding: var(--spacing-xs) var(--spacing-xl);
     text-align: center;
     align-self: flex-end;

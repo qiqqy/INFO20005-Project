@@ -77,15 +77,18 @@ function scrollToSection() {
 function openConfirmation() {
     document.getElementById("confirmation").style.width = "100vw";
     document.getElementById("confirmation").style.display = "block";
+    document.getElementById("searchbar").style.display = "none";
 }
 
 function closeConfirmation() {
     document.getElementById("confirmation").style.width = "0";
     document.getElementById("confirmation").style.display = "none";
+    document.getElementById("searchbar").style.display = "block";
 }
 
 function redirectToHome() {
     window.location.href = "index.html#confirmation";
+
 }
 
 function redirectToShopping() {

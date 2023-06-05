@@ -220,6 +220,14 @@ a:visited {
     z-index: 9998;
 }
 
+.nav .confirmation{
+    display: none;
+    z-index: 9999;
+    padding: var(--spacing-lg);
+    background-color: var(--green-dark);
+    color: white;
+}
+
 ul{
     display: flex;
     justify-content: space-between;

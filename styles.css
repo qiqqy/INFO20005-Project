@@ -844,5 +844,17 @@ input[type="radio"]{
 .total-price{
     display: flex;
     justify-content: space-between;
-  }
-  
+}
+
+.footer--checkout .button{
+    align-self: flex-end;
+    padding: var(--spacing-xs) var(--spacing-xl);
+    margin-right: 0;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer--checkout a{
+    color: var(--brown);
+    align-self: flex-end;
+    margin-right: var(--spacing-xxxs);
+}

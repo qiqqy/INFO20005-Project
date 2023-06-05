@@ -442,8 +442,9 @@ body{
 .books-block{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: var(--spacing-lg) var(--spacing-xl) var(--spacing-xxxs) var(--spacing-xl);
+    justify-content: center; 
+    align-items: center; 
+    margin: var(--spacing-lg) var(--spacing-xxxl) var(--spacing-xxxs) var(--spacing-xxxl);
     color: var(--brown);
 }
 

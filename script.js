@@ -25,6 +25,26 @@ window.onload = function() {
         openConfirmation();
       }
 
+      //adding to and removing from cart
+    
+    const addToCartButtons = document.getElementsByClassName("button--small");
+  
+    Array.from(addToCartButtons).forEach(function(addToCartButtons) {
+      const addedButton = addToCartButtons.nextElementSibling;
+
+      addedButton.style.display = 'none'; 
+  
+      addToCartButtons.addEventListener('click', function() {
+        addToCartButtons.style.display = 'none';
+        addedButton.style.display = 'block';
+      });
+  
+
+      addedButton.addEventListener('click', function() {
+        addToCartButtons.style.display = 'block';
+        addedButton.style.display = 'none';
+      });
+    });
   };
 
 function openMenu() {

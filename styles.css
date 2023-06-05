@@ -120,6 +120,13 @@ table {
     margin: var(--spacing-sm);
 }
 
+.button--small-white{
+    font-size: var(--text-sm);
+    margin: var(--spacing-sm);
+    background-color: var(--white);
+    color: var(--green);
+}
+
 .button:hover{
     background-color: var(--white);
     color: var(--green);

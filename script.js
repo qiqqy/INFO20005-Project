@@ -28,20 +28,22 @@ window.onload = function() {
   };
 
 function openMenu() {
-    document.getElementById("menu").style.width = "200px";
+    document.getElementById("menu").style.width = "20vw";
+    document.getElementById("menu").style.minWidth = "150px";
     document.getElementById("menu").style.display = "block";
-}
-
+  }
+  
 function closeMenu() {
     document.getElementById("menu").style.width = "0";
     document.getElementById("menu").style.display = "none";
-}
-
+  }
+  
 function openCart() {
-    document.getElementById("cart").style.width = "400px";
+    document.getElementById("cart").style.width = "30vw";
+    document.getElementById("cart").style.minWidth = "200px";
     document.getElementById("cart").style.display = "block";
-}
-
+  }
+  
 function closeCart() {
     document.getElementById("cart").style.width = "0";
     document.getElementById("cart").style.display = "none";
@@ -65,4 +67,4 @@ function closeConfirmation() {
 
 function redirectToHome() {
     window.location.href = "index.html#confirmation";
-  }
+}

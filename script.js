@@ -79,3 +79,8 @@ function redirectToProduct() {
 function redirectToProduct2() {
   window.location.href = "product2.html";
 }
+
+function redirectToCheckout() {
+  window.location.href = "checkout.html";
+}
+

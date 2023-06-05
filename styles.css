@@ -382,10 +382,10 @@ body{
     background-size: cover;
     background-position: center 50%; 
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
     height: 100vh;
-    align-items: center;  
+    align-items: center;
 }
 
 .hero-banner--image2 {
@@ -700,7 +700,7 @@ font-weight: bold;
     width: 97%;
 }
 
-span{
+.form-group span{
     color: var(--brown);
     font-size: var(--text-xs);
     font-family: Maven Pro;
@@ -844,5 +844,17 @@ input[type="radio"]{
 .total-price{
     display: flex;
     justify-content: space-between;
-  }
-  
+}
+
+.footer--checkout .button{
+    align-self: flex-end;
+    padding: var(--spacing-xs) var(--spacing-xl);
+    margin-right: 0;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer--checkout a{
+    color: var(--brown);
+    align-self: flex-end;
+    margin-right: var(--spacing-xxxs);
+}
